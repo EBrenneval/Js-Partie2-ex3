@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+  </form>
+  <script>
+  /*Dans le fichier HTML fourni,
+  afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.*/
+  var txt = document.getElementById("nom");//appel de l'input avec l'id
+  txt.addEventListener("keydown", function(){// ajout de mon évènement
+    alert(txt.value);// affichage boit de dial
+  });
+  </script>
+</body>
+</html>
